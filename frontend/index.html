@@ -6,10 +6,23 @@
     <title>Progetto Mappa MVP</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <h1>Mappa Eventi</h1>
+        <h2>Please Select the Map:
+        <select name="map_list" id="mapSelect" onchange="changeMap()">
+            <option value="">Seleziona una mappa</option>
+            <option value="uk_festivals.csv" {{if eq .selectedFilename "uk_festivals.csv"}}selected{{end}}>UK Festivals</option>
+            <option value="uk_events_broadcast.csv" {{if eq .selectedFilename "uk_events_broadcast.csv"}}selected{{end}}>UK Events Broadcast</option>
+            <option value="uk_private_companies.csv" {{if eq .selectedFilename "uk_private_companies.csv"}}selected{{end}}>UK Private Companies</option>
+            <option value="uk_public_companies.csv" {{if eq .selectedFilename "uk_public_companies.csv"}}selected{{end}}>UK Public Companies</option>
+            <option value="de_festivals.csv" {{if eq .selectedFilename "de_festivals.csv"}}selected{{end}}>DE Festivals</option>
+            <option value="de_events_broadcast.csv" {{if eq .selectedFilename "de_events_broadcast.csv"}}selected{{end}}>DE Events Broadcast</option>
+            <option value="de_private_companies.csv" {{if eq .selectedFilename "de_private_companies.csv"}}selected{{end}}>DE Private Companies</option>
+            <option value="de_public_companies.csv" {{if eq .selectedFilename "de_public_companies.csv"}}selected{{end}}>DE Public Companies</option>
+        </select>
+        </h2>
     <div id="map"></div>
 
     <div class="control-panel">
@@ -27,6 +40,14 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
-    <script src="app.js"></script>
+    <script>
+        // Questa variabile globale serve per passare i dati iniziali dal backend a map.js
+        // Usa `|| '[]'` per garantire che sia sempre una stringa JSON valida (array vuoto)
+        window.initialMapEvents = JSON.parse('{{.eventsJSON}}' || '[]');
+        // Conserviamo anche il filename attualmente selezionato per poterlo usare in map.js/app.js
+        window.selectedMapFilename = "{{.selectedFilename}}";
+    </script>
+    <script src="/static/map.js"></script>
+    <script src="/static/app.js"></script>
 </body>
 </html>

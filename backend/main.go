@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"encoding/json"
 	"log"
 	"net/http"
 	"os"
@@ -11,7 +12,6 @@ import (
 )
 
 // ========= STRUTTURE DATI AGGIORNATE =========
-
 // Geometry definisce la struttura della geometria GeoJSON
 type Geometry struct {
 	Type        string        `json:"type"`
@@ -39,10 +39,20 @@ type Event struct {
 	Longitude string `json:"lon"`
 }
 
-func loadEvents() []Event {
-	file, err := os.Open("data/uk_festivals.csv")
+// loadEvents carica gli eventi dal file CSV specificato
+func loadEvents(filename string) []Event {
+	// Se il filename è vuoto, usa un default.
+	// Potresti voler impostare un default più robusto o nessun default
+	// a seconda della logica desiderata quando nessuna mappa è selezionata.
+	if filename == "" {
+		log.Println("Nessun filename specificato, caricamento di 'uk_festivals.csv' come default.")
+		filename = "uk_festivals.csv" // default
+	}
+
+	filepath := "data/" + filename
+	file, err := os.Open(filepath)
 	if err != nil {
-		log.Printf("Attenzione: Impossibile aprire il file CSV: %v. La mappa non avrà marker iniziali.", err)
+		log.Printf("Attenzione: Impossibile aprire il file CSV '%s': %v. La mappa non avrà marker iniziali.", filepath, err)
 		return []Event{}
 	}
 	defer file.Close()
@@ -50,47 +60,77 @@ func loadEvents() []Event {
 	reader := csv.NewReader(file)
 	records, err := reader.ReadAll()
 	if err != nil {
-		log.Printf("Attenzione: Impossibile leggere il file CSV: %v", err)
+		log.Printf("Attenzione: Impossibile leggere il file CSV '%s': %v", filepath, err)
 		return []Event{}
 	}
 
 	var events []Event
+	// Salta l'intestazione se presente (assumiamo prima riga sia intestazione)
 	if len(records) > 1 {
 		for _, record := range records[1:] {
-			event := Event{
-				Name:      record[0],
-				Latitude:  record[1],
-				Longitude: record[2],
+			if len(record) >= 3 { // Assicurati che ci siano almeno 3 colonne (Nome, Lat, Lon)
+				event := Event{
+					Name:      record[0],
+					Latitude:  record[1],
+					Longitude: record[2],
+				}
+				events = append(events, event)
+			} else {
+				log.Printf("Avviso: Riga CSV ignorata a causa di colonne insufficienti: %v", record)
 			}
-			events = append(events, event)
 		}
+	} else {
+		log.Printf("Avviso: Il file CSV '%s' è vuoto o contiene solo l'intestazione.", filepath)
 	}
 	return events
 }
 
 func main() {
 	router := gin.Default()
-
 	config := cors.DefaultConfig()
 	config.AllowOrigins = []string{"*"}
-	config.AllowMethods = []string{"GET", "POST", "OPTIONS"} // Assicurati di permettere POST
+	config.AllowMethods = []string{"GET", "POST", "OPTIONS"}
 	router.Use(cors.New(config))
 
-	events := loadEvents()
+	// Carica i template HTML
+	// Assicurati che il percorso sia corretto rispetto alla root del progetto
+	// Se main.go è in /backend, e index.html è in /frontend, il percorso relativo è ../frontend/*
+	router.LoadHTMLGlob("../frontend/*.html")
+	// Servi TUTTI i file statici dalla cartella ../frontend/static
+	// Ora tutti i tuoi file JS e CSS sarebbero accessibili tramite /static/app.js, /static/style.css, ecc.
+	router.Static("/static", "../frontend/static")
 
+	// Endpoint per servire la pagina principale
+	router.GET("/", func(c *gin.Context) {
+		filename := c.Query("filename")
+		events := loadEvents(filename)
+
+		// Converti in JSON
+		eventsJSON, err := json.Marshal(events)
+		if err != nil {
+			log.Printf("Errore nel marshal JSON degli eventi iniziali: %v", err)
+			eventsJSON = []byte("[]") // Array vuoto come fallback
+		}
+
+		c.HTML(http.StatusOK, "index.html", gin.H{
+			"eventsJSON":       string(eventsJSON),
+			"selectedFilename": filename,
+		})
+	})
+
+	// ========= ENDPOINT GET PER CARICARE GLI EVENTI =========
+	// Questo endpoint verrà chiamato da map.js quando si cambia la selezione della mappa
 	router.GET("/api/events", func(c *gin.Context) {
+		filename := c.Query("filename") // Ottieni il filename dal query parameter
+		events := loadEvents(filename)  // Carica gli eventi
 		c.JSON(http.StatusOK, events)
 	})
 
 	// ========= ENDPOINT POST AGGIORNATO =========
 	router.POST("/api/events/new", func(c *gin.Context) {
-		// Ora usiamo la nostra nuova struct GeoJSONFeature
 		var newEventData GeoJSONFeature
-
-		// Collega il JSON ricevuto alla nostra variabile
 		if err := c.ShouldBindJSON(&newEventData); err != nil {
-			// Se il binding fallisce, restituiamo un errore chiaro
-			log.Printf("ERRORE DI BINDING JSON: %v", err)
+			log.Printf("ERRORE DI BINDING JSON per nuovo evento: %v", err)
 			c.JSON(http.StatusBadRequest, gin.H{
 				"status":  "error",
 				"message": "Formato dei dati non valido.",
@@ -99,17 +139,20 @@ func main() {
 			return
 		}
 
-		// Se il binding ha successo, logghiamo i dati ricevuti
 		log.Printf("✅ Nuovo evento GeoJSON ricevuto correttamente: %+v", newEventData)
 		log.Printf("Dettagli: Nome='%s', Inizio='%s', Fine='%s'",
 			newEventData.Properties.Name,
 			newEventData.Properties.StartDate,
 			newEventData.Properties.EndDate)
 
+		// Qui potresti aggiungere la logica per salvare il nuovo evento
+		// Ad esempio, scriverlo su un file o un database.
+		// Per ora, lo rimandiamo semplicemente come conferma.
+
 		c.JSON(http.StatusOK, gin.H{
 			"status":  "success",
 			"message": "Nuovo evento registrato correttamente.",
-			"data":    newEventData, // Rimandiamo indietro i dati ricevuti per conferma
+			"data":    newEventData,
 		})
 	})
 
