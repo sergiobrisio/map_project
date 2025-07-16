@@ -1,6 +1,7 @@
 let map;
 let drawnItems;
 let drawnPolygon;
+let apiBaseUrl;
 
 document.addEventListener('DOMContentLoaded', () => {
     // Previeni errore "Map container already initialized"
@@ -42,37 +43,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     map.addControl(drawControl);
 
-    // 5. Carica eventi esistenti (CSV) dal backend
-    fetch('http://localhost:8082/api/events')
-        .then(response => response.json())
-        .then(events => {
-            const markers = [];
+    // 5. Carica la config e avvia l'app
+    fetch('./config.json')
+    .then(response => response.json())
+    .then(config => {
+        console.log("✅ Configurazione caricata:", config);
+        apiBaseUrl = config.apiBaseUrl;
+        init(); // chiama la funzione principale
+    })
+    .catch(error => {
+        console.error('Errore nel caricamento della configurazione:', error);
+        alert('Impossibile caricare la configurazione.');
+    });
 
-            events.forEach(event => {
-                if (event.lat && event.lon) {
-                    const lat = parseFloat(event.lat);
-                    const lon = parseFloat(event.lon);
+    function init() {
+        console.log("🌍 Avvio init con base URL:", apiBaseUrl);
+        // 6. Carica eventi esistenti (CSV) dal backend
+        fetch(`${apiBaseUrl}/api/events`)
+            .then(response => response.json())
+            .then(events => {
+                console.log("📍 Eventi ricevuti:", events);
+                const markers = [];
 
-                    const marker = L.marker([lat, lon])
-                        .addTo(map)
-                        .bindPopup(`<b>${event.name}</b>`);
+                events.forEach(event => {
+                    if (event.lat && event.lon) {
+                        const lat = parseFloat(event.lat);
+                        const lon = parseFloat(event.lon);
 
-                    markers.push(marker);
+                        const marker = L.marker([lat, lon])
+                            .addTo(map)
+                            .bindPopup(`<b>${event.name}</b>`);
+
+                        markers.push(marker);
+                    }
+                });
+
+                // Centra la mappa automaticamente
+                if (markers.length > 0) {
+                    const group = L.featureGroup(markers);
+                    map.fitBounds(group.getBounds(), { padding: [20, 20] });
                 }
+            })
+            .catch(error => {
+                console.error('Errore nel caricamento degli eventi:', error);
+                alert('Errore durante il caricamento degli eventi. Verifica che il server sia avviato.');
             });
-
-            // Centra la mappa automaticamente
-            if (markers.length > 0) {
-                const group = L.featureGroup(markers);
-                map.fitBounds(group.getBounds(), { padding: [20, 20] });
-            }
-        })
-        .catch(error => {
-            console.error('Errore nel caricamento degli eventi:', error);
-            alert('Errore durante il caricamento degli eventi. Verifica che il server sia avviato.');
-        });
-
-    // 6. Quando disegni un poligono
+    }
+    // 7. Quando disegni un poligono
     map.on('draw:created', function (e) {
         const type = e.layerType;
         const layer = e.layer;
@@ -85,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 7. Invio nuovo evento
+    // 8. Invio nuovo evento
     document.getElementById('submitEvent').addEventListener('click', function () {
         const startDate = document.getElementById('startDate').value;
         const endDate = document.getElementById('endDate').value;
@@ -110,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        fetch('http://localhost:8082/api/events/new', {
+        fetch(`${apiBaseUrl}/api/events/new`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

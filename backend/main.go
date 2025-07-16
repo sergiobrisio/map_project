@@ -114,5 +114,9 @@ func main() {
 	})
 
 	log.Println("🚀 Server in ascolto su http://localhost:8082")
-	router.Run("localhost:8082")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8082"
+	}
+	router.Run(":" + port)
 }
