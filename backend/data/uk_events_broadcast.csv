@@ -1,0 +1,92 @@
+location,type,description,start_date,end_date,country,region,lat,lon,radius_km
+Wentworth Club,sporting,BMW PGA Championship,2024-09-19,2024-09-22,UK,Surrey,51.4089,-0.6056,1.8
+Ascot Racecourse,sporting,Royal Ascot,2024-06-18,2024-06-22,UK,Berkshire,51.4089,-0.6756,1.2
+Cheltenham Racecourse,sporting,Cheltenham Festival,2024-03-12,2024-03-15,UK,Gloucestershire,51.9089,-2.0756,1.5
+Aintree Racecourse,sporting,Grand National,2024-04-13,2024-04-13,UK,Merseyside,53.4789,-2.9456,1.3
+Goodwood Racecourse,sporting,Glorious Goodwood,2024-07-30,2024-08-03,UK,West Sussex,50.8689,-0.7456,1.1
+River Thames Henley,sporting,Henley Royal Regatta,2024-07-03,2024-07-07,UK,Oxfordshire,51.5389,-0.9056,2.1
+Cowes Isle of Wight,sporting,Cowes Week,2024-08-03,2024-08-10,UK,Isle of Wight,50.7589,-1.2956,3.2
+Silverstone Circuit,sporting,British Grand Prix,2024-07-07,2024-07-07,UK,Northamptonshire,52.0789,-1.0156,2.8
+Westminster Palace,political,State Opening Parliament,2024-07-17,2024-07-17,UK,London,51.4995,-0.1248,0.8
+Horse Guards Parade,ceremonial,Trooping the Colour,2024-06-15,2024-06-15,UK,London,51.5041,-0.1276,0.5
+Cenotaph Whitehall,ceremonial,Remembrance Sunday,2024-11-10,2024-11-10,UK,London,51.5020,-0.1266,0.3
+Edinburgh City,cultural,Edinburgh Festival Fringe,2024-08-02,2024-08-26,UK,Scotland,55.9533,-3.1883,2.8
+Royal Albert Hall,cultural,BBC Proms,2024-07-19,2024-09-14,UK,London,51.5009,-0.1773,0.8
+Notting Hill,cultural,Notting Hill Carnival,2024-08-24,2024-08-26,UK,London,51.5152,-0.2059,1.5
+Manchester,political,Conservative Party Conference,2024-09-29,2024-10-02,UK,Manchester,53.4808,-2.2426,1.2
+Birmingham,political,Labour Party Conference,2024-09-22,2024-09-25,UK,Birmingham,52.4862,-1.8904,1.2
+Brighton,political,Liberal Democrat Conference,2024-09-15,2024-09-17,UK,Brighton,50.8225,-0.1372,1.1
+Westminster,political,Prime Minister Questions,2024-01-01,2024-12-31,UK,London,51.4995,-0.1248,0.3
+Buckingham Palace,ceremonial,Garden Parties,2024-05-08,2024-07-16,UK,London,51.5014,-0.1419,1.8
+Westminster Abbey,ceremonial,Commonwealth Day,2024-03-11,2024-03-11,UK,London,51.4994,-0.1273,0.4
+Portsmouth,ceremonial,D-Day Commemorations,2024-06-06,2024-06-06,UK,Portsmouth,50.8198,-1.0880,2.1
+The Mall London,ceremonial,VE Day Celebrations,2024-05-08,2024-05-08,UK,London,51.5045,-0.1357,1.2
+Brands Hatch,sporting,British Touring Car Championship,2024-04-01,2024-10-31,UK,Kent,51.3569,0.2634,1.5
+Donnington Park,sporting,World Superbike Championship,2024-07-12,2024-07-14,UK,Leicestershire,52.8303,-1.3761,1.2
+Snetterton Circuit,sporting,British GT Championship,2024-04-01,2024-10-31,UK,Norfolk,52.4669,0.9434,1.1
+York Racecourse,sporting,Ebor Festival,2024-08-21,2024-08-24,UK,Yorkshire,53.9481,-1.0634,1.0
+Newmarket Racecourse,sporting,Guineas Festival,2024-05-04,2024-05-05,UK,Suffolk,52.2431,0.4014,1.2
+Epsom Downs,sporting,The Derby,2024-06-01,2024-06-01,UK,Surrey,51.3031,-0.2414,1.3
+Doncaster Racecourse,sporting,St Leger Festival,2024-09-11,2024-09-14,UK,Yorkshire,53.5231,-1.1414,1.1
+Ayr Racecourse,sporting,Scottish Grand National,2024-04-13,2024-04-13,UK,Scotland,55.4631,-4.6314,1.0
+Sandown Park,sporting,Coral Eclipse,2024-07-06,2024-07-06,UK,Surrey,51.3731,-0.6114,0.9
+Newbury Racecourse,sporting,Lockinge Stakes,2024-05-18,2024-05-18,UK,Berkshire,51.4031,-1.3214,0.8
+Haydock Park,sporting,Sprint Cup,2024-09-07,2024-09-07,UK,Merseyside,53.4831,-2.6414,0.9
+Bath Racecourse,sporting,Bath Festival,2024-06-01,2024-06-02,UK,Somerset,51.3931,-2.3614,0.7
+Chester Racecourse,sporting,Chester May Festival,2024-05-08,2024-05-10,UK,Cheshire,53.1931,-2.8914,0.8
+Lingfield Park,sporting,Winter Derby,2024-02-10,2024-02-10,UK,Surrey,51.1731,-0.0114,0.6
+Kempton Park,sporting,King George VI Chase,2024-12-26,2024-12-26,UK,Surrey,51.4131,-0.4314,0.8
+Uttoxeter Racecourse,sporting,Midlands Grand National,2024-03-16,2024-03-16,UK,Staffordshire,52.9031,-1.8614,0.7
+Fakenham Racecourse,sporting,Hunter Chase Festival,2024-04-20,2024-04-20,UK,Norfolk,52.8431,0.8586,0.6
+Hexham Racecourse,sporting,Northumberland Plate,2024-06-29,2024-06-29,UK,Northumberland,54.9731,-2.1014,0.5
+Perth Racecourse,sporting,Perth Festival,2024-08-15,2024-08-17,UK,Scotland,56.3931,-3.4314,0.7
+Musselburgh Racecourse,sporting,Edinburgh Festival,2024-08-02,2024-08-03,UK,Scotland,55.9431,-3.0514,0.6
+Hamilton Park,sporting,Summer Festival,2024-07-20,2024-07-21,UK,Scotland,55.7831,-4.0314,0.5
+Kelso Racecourse,sporting,Border Festival,2024-09-28,2024-09-28,UK,Scotland,55.5931,-2.4314,0.4
+Cartmel Racecourse,sporting,Summer Festival,2024-07-27,2024-07-28,UK,Cumbria,54.1931,-2.9614,0.6
+Ludlow Racecourse,sporting,Autumn Festival,2024-10-12,2024-10-12,UK,Shropshire,52.3631,-2.7314,0.5
+Stratford Racecourse,sporting,Summer Festival,2024-08-10,2024-08-10,UK,Warwickshire,52.1931,-1.7314,0.4
+Warwick Racecourse,sporting,Classic Chase,2024-01-13,2024-01-13,UK,Warwickshire,52.2831,-1.5914,0.5
+Wincanton Racecourse,sporting,Kingwell Hurdle,2024-02-10,2024-02-10,UK,Somerset,51.0531,-2.4314,0.4
+Taunton Racecourse,sporting,West Country Festival,2024-05-25,2024-05-25,UK,Somerset,51.0231,-3.1014,0.4
+Exeter Racecourse,sporting,Haldon Gold Cup,2024-11-02,2024-11-02,UK,Devon,50.7031,-3.5314,0.5
+Newton Abbot,sporting,Summer Festival,2024-08-17,2024-08-17,UK,Devon,50.5231,-3.6014,0.4
+Plumpton Racecourse,sporting,Sussex National,2024-01-08,2024-01-08,UK,East Sussex,50.9031,-0.0614,0.3
+Fontwell Park,sporting,National Hunt Festival,2024-02-18,2024-02-18,UK,West Sussex,50.8531,-0.6914,0.4
+Brighton Racecourse,sporting,Sussex Stakes,2024-08-01,2024-08-01,UK,East Sussex,50.8231,-0.1014,0.3
+Goodwood Motor Circuit,sporting,Festival of Speed,2024-07-11,2024-07-14,UK,West Sussex,50.8589,-0.7556,1.2
+Goodwood Motor Circuit,sporting,Revival Meeting,2024-09-13,2024-09-15,UK,West Sussex,50.8589,-0.7556,1.2
+Cadwell Park,sporting,Cadwell Park Gold Cup,2024-08-24,2024-08-25,UK,Lincolnshire,53.2769,-0.0756,0.8
+Oulton Park,sporting,British Superbike Championship,2024-06-01,2024-06-02,UK,Cheshire,53.1769,-2.6156,0.9
+Thruxton Circuit,sporting,British Touring Cars,2024-05-18,2024-05-19,UK,Hampshire,51.2669,-1.6056,0.7
+Knockhill Racing Circuit,sporting,British Superbike Championship,2024-07-13,2024-07-14,UK,Scotland,56.0669,-3.3856,0.6
+Anglesey Circuit,sporting,Welsh Sports Car Championship,2024-09-07,2024-09-08,UK,Wales,53.2369,-4.5456,0.5
+Mallory Park,sporting,Mallory Park Gold Cup,2024-08-31,2024-08-31,UK,Leicestershire,52.6469,-1.3556,0.4
+Lydden Hill,sporting,British Rallycross Championship,2024-05-26,2024-05-26,UK,Kent,51.1969,1.1444,0.5
+Croft Circuit,sporting,British Touring Cars,2024-06-22,2024-06-23,UK,Yorkshire,54.4569,-1.5556,0.6
+Pembrey Circuit,sporting,British GT Championship,2024-04-27,2024-04-28,UK,Wales,51.7169,-4.3056,0.5
+Mondello Park,sporting,Masters Festival,2024-08-17,2024-08-18,UK,Northern Ireland,53.2969,-6.8456,0.7
+Bishopscourt,sporting,Ulster Grand Prix,2024-08-10,2024-08-10,UK,Northern Ireland,54.3969,-5.4456,0.8
+Aghadowey,sporting,North West 200,2024-05-18,2024-05-18,UK,Northern Ireland,55.1069,-6.7756,2.1
+Dundrod Circuit,sporting,Ulster Grand Prix,2024-08-10,2024-08-10,UK,Northern Ireland,54.5769,-6.0456,3.5
+Armoy,sporting,Armoy Road Races,2024-07-26,2024-07-27,UK,Northern Ireland,55.1569,-6.1756,1.8
+Cookstown,sporting,Cookstown 100,2024-04-27,2024-04-27,UK,Northern Ireland,54.6369,-6.7456,1.2
+Skerries,sporting,Skerries 100,2024-07-13,2024-07-13,UK,Northern Ireland,53.5869,-6.1056,1.0
+Kells,sporting,Kells Road Races,2024-05-25,2024-05-25,UK,Northern Ireland,53.7269,-6.8756,0.9
+Walderstown,sporting,Walderstown Races,2024-08-24,2024-08-24,UK,Northern Ireland,54.2769,-6.4456,0.8
+Fintona,sporting,Fintona Hill Climb,2024-09-07,2024-09-07,UK,Northern Ireland,54.5069,-7.3156,0.6
+Hillsborough,sporting,Hillsborough Races,2024-06-15,2024-06-15,UK,Northern Ireland,54.4569,-6.0856,0.7
+Tandragee,sporting,Tandragee 100,2024-05-04,2024-05-04,UK,Northern Ireland,54.4269,-6.5456,0.9
+Kirkistown,sporting,Kirkistown Races,2024-04-20,2024-04-20,UK,Northern Ireland,54.4769,-5.4756,0.5
+Nutts Corner,sporting,Nutts Corner Sprint,2024-07-06,2024-07-06,UK,Northern Ireland,54.6569,-6.1456,0.4
+Desertmartin,sporting,Desertmartin Races,2024-08-03,2024-08-03,UK,Northern Ireland,54.7069,-6.6756,0.6
+Maghaberry,sporting,Maghaberry Sprint,2024-09-14,2024-09-14,UK,Northern Ireland,54.4969,-6.1956,0.3
+Ballynahinch,sporting,Ballynahinch Races,2024-06-08,2024-06-08,UK,Northern Ireland,54.3769,-5.8756,0.5
+Comber,sporting,Comber Races,2024-07-20,2024-07-20,UK,Northern Ireland,54.5569,-5.7456,0.4
+Carryduff,sporting,Carryduff Sprint,2024-08-17,2024-08-17,UK,Northern Ireland,54.5169,-5.8956,0.3
+Antrim,sporting,Antrim Races,2024-05-11,2024-05-11,UK,Northern Ireland,54.7169,-6.2056,0.4
+Larne,sporting,Larne Sprint,2024-09-21,2024-09-21,UK,Northern Ireland,54.8569,-5.8156,0.3
+Coleraine,sporting,Coleraine Races,2024-06-29,2024-06-29,UK,Northern Ireland,55.1369,-6.6756,0.5
+Portrush,sporting,Portrush Sprint,2024-07-27,2024-07-27,UK,Northern Ireland,55.2069,-6.6556,0.4
+Ballycastle,sporting,Ballycastle Races,2024-08-14,2024-08-14,UK,Northern Ireland,55.2069,-6.2356,0.3
+Bushmills,sporting,Bushmills Sprint,2024-09-28,2024-09-28,UK,Northern Ireland,55.2769,-6.5156,0.2

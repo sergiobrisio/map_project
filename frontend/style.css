@@ -1,0 +1,3 @@
+body { font-family: sans-serif; }
+#map { height: 600px; width: 100%; }
+.control-panel { padding: 10px; background-color: #f2f2f2; margin-top: 10px; }

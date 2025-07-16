@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Mappa MVP</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mappa Eventi</h1>
+    <div id="map"></div>
+
+    <div class="control-panel">
+        <h2>Crea Nuovo Evento</h2>
+        <p>1. Usa i controlli sulla mappa per disegnare un poligono.</p>
+        <p>2. Seleziona le date e clicca 'Invia'.</p>
+        <label for="startDate">Data Inizio:</label>
+        <input type="date" id="startDate">
+        <br>
+        <label for="endDate">Data Fine:</label>
+        <input type="date" id="endDate">
+        <br><br>
+        <button id="submitEvent">Invia Nuovo Evento</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

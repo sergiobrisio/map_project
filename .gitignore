@@ -1,0 +1,9 @@
+# backend
+/backend/bin/
+/backend/*.exe
+
+# node_modules (se usi vite o simili)
+/frontend/node_modules/
+
+# OS
+.DS_Store

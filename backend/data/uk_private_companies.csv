@@ -1,0 +1,106 @@
+nome_azienda,tipo,latitudine,longitudine,raggio_km,superficie_kmq
+Ineos Grangemouth,azienda_privata,56.0103,-3.7176,3.2,32
+Ineos Runcorn,azienda_privata,53.3478,-2.7301,2.8,25
+Ineos Seal Sands,azienda_privata,54.6133,-1.1944,2.1,14
+Ineos Belford,azienda_privata,55.6103,-1.8176,1.8,10
+BP Grangemouth Refinery,azienda_privata,56.0103,-3.7176,2.5,20
+Shell Haven Refinery,azienda_privata,51.5103,0.4824,2.8,25
+ExxonMobil Fawley,azienda_privata,50.8103,-1.3176,3.5,38
+Essar Oil Stanlow,azienda_privata,53.2678,-2.8301,2.2,15
+Valero Pembroke,azienda_privata,51.6833,-5.0422,2.8,25
+Phillips 66 Humber,azienda_privata,53.7676,-0.3274,2.1,14
+Total Lindsey,azienda_privata,53.4676,-0.1274,1.9,11
+Petroineos Lavera,azienda_privata,51.5103,0.1824,1.5,7
+British Land London Portfolio,azienda_privata,51.5074,-0.1278,8.5,227
+Land Securities Central London,azienda_privata,51.5074,-0.1278,6.2,121
+Canary Wharf Group,azienda_privata,51.5045,-0.0174,1.8,10
+Grosvenor Estate London,azienda_privata,51.5074,-0.1278,2.3,17
+Cadogan Estate Chelsea,azienda_privata,51.4925,-0.1592,1.5,7
+Howard de Walden Estate,azienda_privata,51.5182,-0.1447,1.2,4
+Portman Estate,azienda_privata,51.5167,-0.1469,1.1,4
+Derwent London,azienda_privata,51.5074,-0.1278,3.2,32
+Great Portland Estates,azienda_privata,51.5182,-0.1447,2.1,14
+Shaftesbury Capital,azienda_privata,51.5132,-0.1316,1.8,10
+Segro Park Slough,azienda_privata,51.5095,-0.5955,4.2,55
+Segro Park Heathrow,azienda_privata,51.4700,-0.4543,3.8,45
+Segro Park Birmingham,azienda_privata,52.4777,-1.8990,3.5,38
+Segro Park Manchester,azienda_privata,53.4773,-2.2309,3.2,32
+Segro Park East Midlands,azienda_privata,52.8308,-1.3282,2.8,25
+Tesco Daventry DC,azienda_privata,52.2573,-1.1618,2.1,14
+Tesco Livingston DC,azienda_privata,55.8863,-3.5203,1.9,11
+Tesco Magor DC,azienda_privata,51.5863,-2.8203,1.8,10
+Tesco Lichfield DC,azienda_privata,52.6863,-1.8203,1.7,9
+Tesco Peterborough DC,azienda_privata,52.5745,-0.2503,1.6,8
+Amazon Rugeley,azienda_privata,52.7595,-1.9357,2.8,25
+Amazon Dunfermline,azienda_privata,56.0720,-3.4542,2.5,20
+Amazon Doncaster,azienda_privata,53.5224,-1.1407,2.3,17
+Amazon Coventry,azienda_privata,52.4007,-1.5168,2.1,14
+Amazon Swansea,azienda_privata,51.6214,-3.9436,1.9,11
+Amazon Tilbury,azienda_privata,51.4598,0.3551,1.8,10
+Amazon Warrington,azienda_privata,53.3900,-2.5984,1.7,9
+Amazon Daventry,azienda_privata,52.2573,-1.1618,1.6,8
+Amazon Peterborough,azienda_privata,52.5745,-0.2503,1.5,7
+Amazon Bristol,azienda_privata,51.4494,-2.5808,1.4,6
+DHL East Midlands Hub,azienda_privata,52.8308,-1.3282,2.1,14
+DHL Heathrow Hub,azienda_privata,51.4700,-0.4543,1.8,10
+DHL Birmingham Hub,azienda_privata,52.4777,-1.8990,1.6,8
+UPS Tamworth Hub,azienda_privata,52.6339,-1.6958,1.5,7
+UPS Feltham Hub,azienda_privata,51.4459,-0.4042,1.3,5
+FedEx Stansted Hub,azienda_privata,51.8849,0.2348,1.2,4
+FedEx Gatwick Hub,azienda_privata,51.1537,-0.1821,1.1,4
+Rolls-Royce Derby,azienda_privata,52.9159,-1.4641,2.8,25
+Rolls-Royce Bristol,azienda_privata,51.4494,-2.5808,2.1,14
+Rolls-Royce Hucknall,azienda_privata,53.0341,-1.2056,1.5,7
+BAE Systems Warton,azienda_privata,53.7476,-2.8834,2.3,17
+BAE Systems Brough,azienda_privata,53.7276,-0.5834,1.9,11
+BAE Systems Samlesbury,azienda_privata,53.7776,-2.6334,1.7,9
+Airbus Broughton,azienda_privata,53.1476,-3.0334,2.5,20
+Airbus Filton,azienda_privata,51.5276,-2.5834,1.8,10
+JLR Solihull,azienda_privata,52.4140,-1.7748,2.1,14
+JLR Castle Bromwich,azienda_privata,52.5140,-1.7748,1.8,10
+JLR Halewood,azienda_privata,53.3640,-2.8248,1.6,8
+Nissan Sunderland,azienda_privata,54.9061,-1.4300,3.2,32
+Honda Swindon,azienda_privata,51.5561,-1.7800,2.5,20
+Toyota Burnaston,azienda_privata,52.9561,-1.5300,2.1,14
+BMW Mini Oxford,azienda_privata,51.7520,-1.2577,1.8,10
+BMW Hams Hall,azienda_privata,52.5520,-1.6577,1.5,7
+Ford Dagenham,azienda_privata,51.5420,0.1423,2.3,17
+Ford Bridgend,azienda_privata,51.5020,-3.5577,1.9,11
+Vauxhall Ellesmere Port,azienda_privata,53.2820,-2.9077,2.1,14
+Vauxhall Luton,azienda_privata,51.8820,-0.4077,1.8,10
+Tata Steel Port Talbot,azienda_privata,51.5889,-3.7836,4.2,55
+Tata Steel Scunthorpe,azienda_privata,53.5889,-0.6336,3.8,45
+British Steel Scunthorpe,azienda_privata,53.5889,-0.6336,2.1,14
+ArcelorMittal Calvert,azienda_privata,51.4589,-0.9836,1.5,7
+Celsa Steel Cardiff,azienda_privata,51.4816,-3.1791,1.3,5
+Liberty Steel Rotherham,azienda_privata,53.4316,-1.3591,1.8,10
+Liberty Steel Newport,azienda_privata,51.5881,-2.9977,1.6,8
+SSI Redcar,azienda_privata,54.6116,-1.0591,2.8,25
+Lafarge Cement Dunbar,azienda_privata,55.9981,-2.5126,1.9,11
+Lafarge Cement Hope,azienda_privata,53.3481,-1.7326,1.7,9
+Hanson Cement Ketton,azienda_privata,52.6081,-0.7326,1.5,7
+Hanson Cement Ribblesdale,azienda_privata,54.0681,-2.4326,1.3,5
+Tarmac Tunstead,azienda_privata,53.2881,-1.9126,1.8,10
+Tarmac Shap,azienda_privata,54.4881,-2.6826,1.6,8
+Aggregate Industries Bardon,azienda_privata,52.7281,-1.3326,1.4,6
+Aggregate Industries Whatley,azienda_privata,51.2481,-2.4826,1.2,4
+Drax Power Station,azienda_privata,53.7357,-0.9973,2.8,25
+EDF West Burton,azienda_privata,53.3357,-0.7973,2.1,14
+EDF Cottam,azienda_privata,53.2857,-0.7473,1.9,11
+RWE Aberthaw,azienda_privata,51.3857,-3.4073,1.8,10
+SSE Fiddlers Ferry,azienda_privata,53.3857,-2.6073,1.6,8
+Centrica Rough,azienda_privata,53.7857,0.1927,1.5,7
+BP North Sea Forties,azienda_privata,57.0357,-0.8073,2.1,14
+Shell North Sea Brent,azienda_privata,61.1357,1.1927,1.9,11
+ExxonMobil North Sea,azienda_privata,58.2357,0.2927,1.7,9
+ConocoPhillips Britannia,azienda_privata,58.4357,0.8927,1.5,7
+Equinor Mariner,azienda_privata,59.0357,-2.1073,1.3,5
+Total Culzean,azienda_privata,57.8357,-0.5073,1.2,4
+Laing O'Rourke Dartford,azienda_privata,51.4467,0.2192,1.8,10
+Laing O'Rourke Worksop,azienda_privata,53.3067,-1.1308,1.5,7
+Balfour Beatty London,azienda_privata,51.5074,-0.1278,1.2,4
+Balfour Beatty Birmingham,azienda_privata,52.4777,-1.8990,1.0,3
+Kier Group Tempsford,azienda_privata,52.1577,-0.2690,1.3,5
+Kier Group Sandy,azienda_privata,52.1277,-0.2890,1.1,4
+Costain Maidenhead,azienda_privata,51.5277,-0.7190,1.0,3
+Galliford Try Uxbridge,azienda_privata,51.5477,-0.4790,0.9,3
