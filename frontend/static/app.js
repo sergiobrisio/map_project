@@ -3,6 +3,13 @@ let drawnPolygon;
 let apiBaseUrl;
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Controlla se la mappa è già pronta
+    if (window.map) {
+        initDrawingAndSubmission();
+    } else {
+        // Aspetta l'evento mapReady
+        window.addEventListener('mapReady', initDrawingAndSubmission);
+    }
     // 1. Carica la config e avvia l'app
     fetch('/static/config.json')
     .then(response => response.json())

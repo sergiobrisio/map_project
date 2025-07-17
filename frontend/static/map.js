@@ -22,6 +22,12 @@ function initializeMap() {
     }).addTo(map);
 
     map.addLayer(currentMarkers); // Aggiungi il featureGroup per i marker
+    // SPOSTA QUI le assegnazioni globali, DOPO che la mappa è stata creata
+    window.map = map;
+    window.loadMarkersOnMap = loadMarkersOnMap;
+    
+    // Opzionale: dispara un evento per notificare che la mappa è pronta
+    window.dispatchEvent(new CustomEvent('mapReady'));
 }
 
 // Funzione chiamata dalla select per cambiare la mappa
@@ -65,8 +71,3 @@ function loadMarkersOnMap(events) {
         map.setView([41.9, 12.5], 5);
     }
 }
-
-// Rendi 'map' disponibile globalmente o passala ad app.js se necessario
-// Per semplicità, la rendiamo disponibile globalmente.
-window.map = map;
-window.loadMarkersOnMap = loadMarkersOnMap; // Esponi la funzione per potenziale uso esterno
