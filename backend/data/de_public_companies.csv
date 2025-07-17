@@ -1,0 +1,31 @@
+name,latitude,longitude,terms,country_id,country,region_id,region,radius,Notes
+Flughafen Frankfurt,50.0333,8.5706,Airport,,Frankfurt am Main,,,5000,"Major international airport, extensive contiguous area."
+Flughafen Munchen,48.3537,11.7861,Airport,,Munich,,,4000,"Major international airport, extensive contiguous area."
+Hamburger Hafen (Container Terminal Altenwerder),53.5139,9.9145,Port,,Hamburg,,,3000,One of the largest and most contiguous container terminals within the Port of Hamburg.
+Hafen Bremerhaven (Container Terminal),53.5855,8.5722,Port,,Bremerhaven,,,3000,"Major container terminal, part of one of Europe's largest ports."
+Rangierbahnhof Maschen,53.385,10.025,Railway Station/Yard,,Seevetal,,,2500,Largest shunting yard in Europe by area.
+Universitaat zu Kuln (Campus),50.9298,6.9288,University,,Cologne,,,1000,"Large, relatively compact university campus."
+Goethe-Universitaat Frankfurt (Westend Campus),50.1265,8.6657,University,,Frankfurt am Main,,,800,"Modern, extensive university campus in a city setting."
+Technische Universitaat Berlin (Main Campus),52.511,13.326,University,,Berlin,,,1000,Large urban university campus.
+Ludwig-Maximilians-Universitaat Munchen (Grouhadern Campus),48.118,11.45,University,,Munich,,,1000,Large campus for medicine and natural sciences.
+Charit Universitaatsmedizin Berlin (Campus Virchow-Klinikum),52.546,13.35,Hospital,,Berlin,,,800,Major university hospital complex.
+Universitaatsklinikum Hamburg-Eppendorf (UKE),53.59,9.973,Hospital,,Hamburg,,,800,Large university hospital campus.
+Deutsches Elektronen-Synchrotron (DESY),53.584,9.756,Research Center,,Hamburg,,,1500,Large particle accelerator and research facility.
+Helmholtz-Zentrum Berlin (Campus Wannsee),52.423,13.116,Research Center,,Berlin,,,1000,Large research campus for materials and energy.
+Deutsches Zentrum fur Luft- und Raumfahrt (DLR),48.086,11.272,Research Center,,Oberpfaffenhofen,,,1500,Large aerospace research and testing center.
+Forschungszentrum Julich,50.9,6.41,Research Center,,Jülich,,,2000,One of Europe's largest interdisciplinary research centers.
+Bundeswehr (Truppenubungsplatz Bergen),52.79,9.92,Military Training Area,,Bergen,,,10000,"Large military training area, significant contiguous land."
+Justizvollzugsanstalt (JVA) Tegel,52.58,13.29,Prison,,Berlin,,,500,Large prison complex.
+Deutsche Welle,50.725,7.1,Broadcasting Complex,,Bonn,,,300,Main broadcasting complex.
+Bayerischer Rundfunk (Funkhaus Freimann),48.188,11.62,Broadcasting Complex,,Munich,,,400,Large broadcasting complex with studios and offices.
+Westdeutscher Rundfunk (WDR),50.938,6.945,Broadcasting Complex,,Cologne,,,400,Large broadcasting complex with studios and offices.
+Messe Frankfurt,50.111,8.644,Fairground,,Frankfurt am Main,,,1500,"Large exhibition center, public infrastructure."
+Messe Munchen,48.136,11.69,Fairground,,Munich,,,1500,"Large exhibition center, public infrastructure."
+Messe Berlin,52.502,13.275,Fairground,,Berlin,,,1500,"Large exhibition center, public infrastructure."
+Flughafen Berlin Brandenburg (BER),52.36,13.5,Airport,,Schönefeld,,,4000,"New major international airport, extensive contiguous area."
+Flughafen Stuttgart,48.69,9.2,Airport,,Stuttgart,,,2000,Large regional airport.
+Flughafen Dusseldorf,51.289,6.766,Airport,,Düsseldorf,,,2500,Large international airport.
+Hafen Duisburg (Duisport - Logport I),51.46,6.67,Port,,Duisburg,,,2000,"World's largest inland port, focusing on a major contiguous logistics area."
+Hafen Rostock,54.16,12.11,Port,,Rostock,,,2500,Major Baltic Sea port.
+JadeWeserPort,53.59,8.14,Port,,Wilhelmshaven,,,3000,"Germany's only deep-water port, very large."
+Berlin Hauptbahnhof (main station complex),52.525,13.369,Railway Station/Yard,,Berlin,,,1000,Central station complex including surrounding rail yards and buildings.

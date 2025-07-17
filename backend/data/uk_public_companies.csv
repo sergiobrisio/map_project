@@ -1,0 +1,109 @@
+name,latitudine,longitudine,terms,country_id,country,region_id,region,radius,notes,surface_kmq
+United Utilities North West,54.4609,-3.0886,public_company,,,,,18.5,,1085
+Scottish Water Central,56.1165,-3.9369,public_company,,,,,12.2,,468
+Welsh Water South,51.8818,-3.3436,public_company,,,,,15.8,,785
+Anglian Water East,52.5665,0.2405,public_company,,,,,20.1,,1268
+Thames Water London,51.5074,-0.1278,public_company,,,,,25.4,,2031
+Severn Trent Midlands,52.4862,-1.8904,public_company,,,,,22.6,,1598
+Yorkshire Water,53.7997,-1.5492,public_company,,,,,18.9,,1122
+Wessex Water,51.0543,-2.3139,public_company,,,,,12.7,,507
+Northumbrian Water,55.0061,-1.43,public_company,,,,,14.3,,642
+Southern Water,50.8429,-1.0868,public_company,,,,,16.2,,823
+Ineos Grangemouth,56.0103,-3.7176,private_company,,,,,3.2,,32
+Ineos Runcorn,53.3478,-2.7301,private_company,,,,,2.8,,25
+Ineos Seal Sands,54.6133,-1.1944,private_company,,,,,2.1,,14
+British Land London Portfolio,51.5074,-0.1278,private_company,,,,,8.5,,227
+Land Securities Central London,51.5074,-0.1278,private_company,,,,,6.2,,121
+Canary Wharf Group,51.5045,-0.0174,private_company,,,,,1.8,,10
+Grosvenor Estate London,51.5074,-0.1278,private_company,,,,,2.3,,17
+Cadogan Estate Chelsea,51.4925,-0.1592,private_company,,,,,1.5,,7
+Howard de Walden Estate,51.5182,-0.1447,private_company,,,,,1.2,,4
+Portman Estate,51.5167,-0.1469,private_company,,,,,1.1,,4
+Derwent London,51.5074,-0.1278,private_company,,,,,3.2,,32
+Great Portland Estates,51.5182,-0.1447,private_company,,,,,2.1,,14
+Shaftesbury Capital,51.5132,-0.1316,private_company,,,,,1.8,,10
+Heathrow Airport,51.47,-0.4543,airport,,,,,6.5,,132
+Gatwick Airport,51.1537,-0.1821,airport,,,,,3.2,,32
+Manchester Airport,53.3536,-2.275,airport,,,,,4.8,,72
+Stansted Airport,51.8849,0.2348,airport,,,,,2.9,,26
+Birmingham Airport,52.4539,-1.7481,airport,,,,,2.1,,14
+Edinburgh Airport,55.95,-3.3725,airport,,,,,2.3,,17
+Glasgow Airport,55.8719,-4.4333,airport,,,,,2.1,,14
+Bristol Airport,51.3827,-2.7191,airport,,,,,1.6,,8
+Liverpool Airport,53.3336,-2.8497,airport,,,,,1.4,,6
+Newcastle Airport,55.0375,-1.6917,airport,,,,,1.3,,5
+Belfast International Airport,54.6575,-6.2158,airport,,,,,1.8,,10
+Aberdeen Airport,57.2017,-2.1978,airport,,,,,1.5,,7
+Cardiff Airport,51.3967,-3.3431,airport,,,,,1.2,,4
+Port of London Authority Thames,51.5074,-0.1278,port,,,,,45.2,,6408
+Port of Southampton,50.8998,-1.3938,port,,,,,8.5,,227
+Port of Felixstowe,51.9544,1.3156,port,,,,,3.2,,32
+Port of Liverpool,53.4084,-2.9916,port,,,,,12.8,,515
+Port of Grimsby,53.5676,-0.0755,port,,,,,6.2,,121
+Port of Immingham,53.6304,-0.1866,port,,,,,4.8,,72
+Port of Hull,53.7676,-0.3274,port,,,,,5.1,,82
+Port of Tyne,54.9783,-1.436,port,,,,,8.1,,206
+Port of Forth,56.0014,-3.4238,port,,,,,12.3,,475
+Port of Aberdeen,57.1438,-2.0814,port,,,,,4.2,,55
+Port of Dundee,56.462,-2.9707,port,,,,,3.8,,45
+Port of Glasgow,55.8642,-4.2518,port,,,,,15.2,,726
+Port of Milford Haven,51.7071,-5.0422,port,,,,,18.5,,1075
+Port of Newport,51.5881,-2.9977,port,,,,,4.5,,64
+Port of Swansea,51.6214,-3.9436,port,,,,,6.8,,145
+Port of Cardiff,51.4816,-3.1791,port,,,,,3.2,,32
+Port of Belfast,54.6067,-5.8967,port,,,,,8.9,,249
+Sellafield Nuclear Site,54.4192,-3.5086,government_agency,,,,,5.2,,85
+Hinkley Point Nuclear,51.2086,-3.1314,government_agency,,,,,2.8,,25
+Sizewell Nuclear,52.2136,1.6204,government_agency,,,,,2.1,,14
+Dungeness Nuclear,50.9136,0.9656,government_agency,,,,,1.8,,10
+Wylfa Nuclear,53.4136,-4.4856,government_agency,,,,,1.5,,7
+Torness Nuclear,55.9686,-2.4056,government_agency,,,,,1.2,,4
+Hartlepool Nuclear,54.6336,-1.1856,government_agency,,,,,1.1,,4
+Heysham Nuclear,54.0286,-2.9156,government_agency,,,,,1,,3
+Oldbury Nuclear,51.6886,-2.5156,government_agency,,,,,0.9,,3
+Chapelcross Nuclear,55.0186,-3.2156,government_agency,,,,,0.8,,2
+University of Cambridge,52.2043,0.1218,university,,,,,3.2,,32
+University of Oxford,51.752,-1.2577,university,,,,,2.8,,25
+University of Edinburgh,55.9533,-3.1883,university,,,,,2.1,,14
+University of Glasgow,55.8721,-4.289,university,,,,,1.9,,11
+University of St Andrews,56.3398,-2.7967,university,,,,,1.8,,10
+University of Durham,54.7761,-1.5733,university,,,,,1.5,,7
+University of Warwick,52.3791,-1.5606,university,,,,,1.4,,6
+University of York,53.948,-1.0536,university,,,,,1.3,,5
+University of Bath,51.3781,-2.3286,university,,,,,1.2,,4
+University of Surrey,51.2433,-0.5889,university,,,,,1.1,,4
+Keele University,53.0036,-2.2736,university,,,,,1,,3
+University of East Anglia,52.6217,1.2411,university,,,,,0.9,,3
+University of Sussex,50.8645,-0.0877,university,,,,,0.8,,2
+University of Essex,51.8756,0.9418,university,,,,,0.7,,2
+University of Kent,51.2978,1.0648,university,,,,,0.6,,1
+London King's Cross Station,51.5308,-0.1238,railway_station,,,,,0.5,,1
+London Euston Station,51.5269,-0.1338,railway_station,,,,,0.4,,1
+London Paddington Station,51.5154,-0.1755,railway_station,,,,,0.3,,1
+London Victoria Station,51.4952,-0.1441,railway_station,,,,,0.3,,1
+London Waterloo Station,51.5036,-0.1136,railway_station,,,,,0.4,,1
+London Liverpool Street Station,51.5183,-0.0822,railway_station,,,,,0.3,,1
+Birmingham New Street Station,52.4777,-1.899,railway_station,,,,,0.2,,1
+Manchester Piccadilly Station,53.4773,-2.2309,railway_station,,,,,0.2,,1
+Glasgow Central Station,55.8584,-4.2576,railway_station,,,,,0.2,,1
+Edinburgh Waverley Station,55.9521,-3.1889,railway_station,,,,,0.2,,1
+Leeds Station,53.7939,-1.5471,railway_station,,,,,0.2,,1
+Newcastle Central Station,54.9688,-1.6177,railway_station,,,,,0.2,,1
+Cardiff Central Station,51.4758,-3.1788,railway_station,,,,,0.2,,1
+Bristol Temple Meads Station,51.4494,-2.5808,railway_station,,,,,0.2,,1
+Sheffield Station,53.3781,-1.4623,railway_station,,,,,0.2,,1
+Nottingham Station,52.9479,-1.1466,railway_station,,,,,0.2,,1
+Liverpool Lime Street Station,53.4075,-2.9773,railway_station,,,,,0.2,,1
+Coventry Station,52.4007,-1.5168,railway_station,,,,,0.2,,1
+Preston Station,53.7576,-2.7093,railway_station,,,,,0.2,,1
+York Station,53.9577,-1.0933,railway_station,,,,,0.2,,1
+Reading Station,51.4584,-0.9706,railway_station,,,,,0.2,,1
+Derby Station,52.9159,-1.4641,railway_station,,,,,0.2,,1
+Leicester Station,52.6278,-1.1246,railway_station,,,,,0.2,,1
+Hull Station,53.7448,-0.3464,railway_station,,,,,0.2,,1
+Stoke-on-Trent Station,53.0084,-2.1794,railway_station,,,,,0.2,,1
+Wolverhampton Station,52.5878,-2.1201,railway_station,,,,,0.2,,1
+Southampton Central Station,50.9077,-1.4145,railway_station,,,,,0.2,,1
+Plymouth Station,50.3783,-4.1427,railway_station,,,,,0.2,,1
+Peterborough Station,52.5745,-0.2503,railway_station,,,,,0.2,,1
+Doncaster Station,53.5224,-1.1407,railway_station,,,,,0.2,,1

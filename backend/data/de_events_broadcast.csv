@@ -1,31 +1,31 @@
-Event Name,Type,Frequency,Period,Location,Latitude,Longitude,Radius,Notes
-Berlin Freedom Week,Citywide Festival,Annual,November,Berlin,52.5200,13.4050,5000,"New citywide initiative starting 2025, involves various distributed events requiring temporary setups."
-Oktoberfest (Parades),Folk Festival / Parades,Annual,September-October,Munich (Theresienwiese & city),48.1364,11.5498,1500,"Famous festival with large parades requiring mobile broadcasting along the route."
-Carnevale Parades,Carnival Parade,Annual,February/March,Cologne,50.9375,6.9603,2000,"Major street parade, extensive mobile broadcasting needed along route."
-Carnevale Parades,Carnival Parade,Annual,February/March,Düsseldorf,51.2277,6.7735,2000,"Major street parade, extensive mobile broadcasting needed along route."
-Carnevale Parades,Carnival Parade,Annual,February/March,Mainz,49.9929,8.2783,2000,"Major street parade, extensive mobile broadcasting needed along route."
-Gäubodenvolksfest,Folk Festival,Annual,August,Straubing,48.8800,12.5700,1000,"Second largest folk festival in Bavaria, open-air setup."
-Rhein in Flammen,Fireworks Festival (series),Annual (series of events),May-September (various dates),Along Rhine River (e.g., Bonn, Koblenz),50.3600,7.6000,50000,"Major fireworks display series along the Rhine, requiring mobile broadcast along riverbanks/boats."
-Frühlingsfest,Spring Folk Festival,Annual,April/May,Stuttgart,48.7758,9.1829,1000,"Large spring festival, similar to Oktoberfest, takes place on fairgrounds with temporary setups."
-Walpurgisnacht (Harz),Traditional Festival,Annual,April 30th,Harz Mountains (various towns),51.7500,10.6500,5000,"Ancient pagan festival with bonfires and celebrations, spread across natural areas, temporary broadcast needs."
-Deutschland Tour,Professional Cycling Race,Annual,August,Germany (itinerant stages),51.1657,10.4515,100000,"Major professional cycling race with multiple stages across Germany, requiring extensive temporary broadcasting infrastructure for live coverage along the route."
-Marcia per la Vita,Public March/Demonstration,Annual,September,Berlin,52.5200,13.4050,2000,"Public march, explicitly mentioned as covered live by TV, requiring mobile broadcast."
-Marcia per la Vita,Public March/Demonstration,Annual,September,Cologne,50.9375,6.9603,2000,"Public march, explicitly mentioned as covered live by TV, requiring mobile broadcast."
-Berlin Marathon,Road Running Race,Annual,September,Berlin,52.5200,13.4050,2000,"Major international marathon, extensive road closures and mobile broadcast required."
-Hamburg Marathon,Road Running Race,Annual,April,Hamburg,53.5511,9.9937,2000,"Major city marathon, requiring mobile broadcast."
-Frankfurt Marathon,Road Running Race,Annual,October,Frankfurt am Main,50.1109,8.6821,2000,"Major city marathon, requiring mobile broadcast."
-Cologne Marathon,Road Running Race,Annual,October,Cologne,50.9375,6.9603,2000,"Major city marathon, requiring mobile broadcast."
-Düsseldorf Marathon,Road Running Race,Annual,April,Düsseldorf,51.2277,6.7735,2000,"Major city marathon, requiring mobile broadcast."
-Munich Marathon,Road Running Race,Annual,October,Munich,48.1351,11.5820,2000,"Major city marathon, requiring mobile broadcast."
-Leipzig Marathon,Road Running Race,Annual,April,Leipzig,51.3397,12.3731,2000,"City marathon, requiring mobile broadcast."
-Dresden Marathon,Road Running Race,Annual,October,Dresden,51.0504,13.7373,2000,"City marathon, requiring mobile broadcast."
-Bremen Marathon,Road Running Race,Annual,October,Bremen,53.0793,8.8017,2000,"City marathon, requiring mobile broadcast."
-Stuttgart Marathon,Road Running Race,Annual,October,Stuttgart,48.7758,9.1829,2000,"City marathon, requiring mobile broadcast."
-Hannover Marathon,Road Running Race,Annual,April,Hannover,52.3759,9.7320,2000,"City marathon, requiring mobile broadcast."
-Fête de la Musique,Street Music Festival,Annual,June 21,Berlin (citywide),52.5200,13.4050,3000,"Hundreds of free concerts in public spaces, requiring distributed temporary setups."
-Rave the Planet,Street Parade/Demonstration,Annual,July,Berlin,52.5200,13.4050,3000,"Successor to Love Parade, large street event with floats and sound systems, requiring extensive temporary broadcast."
-Cannstatter Wasen,Folk Festival / Fair,Annual,September-October,Stuttgart,48.7990,9.2130,1000,"Large folk festival on fairgrounds, similar to Oktoberfest, with temporary infrastructure."
-Kieler Woche,Sailing Regatta & Festival,Annual,June,Kiel,54.3233,10.1228,2000,"World's largest sailing event with accompanying city festival, parades, and numerous outdoor events requiring temporary broadcast along the waterfront."
-Nuremberg Christkindlesmarkt,Christmas Market,Annual,Nov-Dec,Nuremberg,49.4521,11.0767,500,"One of the most famous Christmas markets; large-scale events and broadcasts often use temporary setups."
-Rathausmarkt Weihnachtsmarkt,Christmas Market,Annual,Nov-Dec,Hamburg,53.5500,9.9900,500,"Popular Christmas market in front of city hall, temporary setups for media coverage."
-Domplatte Weihnachtsmarkt,Christmas Market,Annual,Nov-Dec,Cologne,50.9410,6.9580,500,"Major Christmas market next to the cathedral, temporary setups for media coverage."
+name,latitude,longitude,terms,country_id,country,region_id,region,radius,notes,period,,
+Berlin Freedom Week,52.52,13.405,Citywide Festival,,Berlin,,,5000,"New citywide initiative starting 2025, involves various distributed events requiring temporary setups.",November,,
+Oktoberfest (Parades),48.1364,11.5498,Folk Festival / Parades,,Munich (Theresienwiese & city),,,1500,Famous festival with large parades requiring mobile broadcasting along the route.,September-October,,
+Carnevale Parades,50.9375,6.9603,Carnival Parade,,Cologne,,,2000,"Major street parade, extensive mobile broadcasting needed along route.",February/March,,
+Carnevale Parades,51.2277,6.7735,Carnival Parade,,Düsseldorf,,,2000,"Major street parade, extensive mobile broadcasting needed along route.",February/March,,
+Carnevale Parades,49.9929,8.2783,Carnival Parade,,Mainz,,,2000,"Major street parade, extensive mobile broadcasting needed along route.",February/March,,
+Gäubodenvolksfest,48.88,12.57,Folk Festival,,Straubing,,,1000,"Second largest folk festival in Bavaria, open-air setup.",August,,
+Rhein in Flammen, Bonn, Koblenz),Fireworks Festival (series),,Along Rhine River (e.g.,,,50.36,7.6,May-September (various dates),50000,"Major fireworks display series along the Rhine, requiring mobile broadcast along riverbanks/boats."
+Frühlingsfest,48.7758,9.1829,Spring Folk Festival,,Stuttgart,,,1000,"Large spring festival, similar to Oktoberfest, takes place on fairgrounds with temporary setups.",April/May,,
+Walpurgisnacht (Harz),51.75,10.65,Traditional Festival,,Harz Mountains (various towns),,,5000,"Ancient pagan festival with bonfires and celebrations, spread across natural areas, temporary broadcast needs.",April 30th,,
+Deutschland Tour,51.1657,10.4515,Professional Cycling Race,,Germany (itinerant stages),,,100000,"Major professional cycling race with multiple stages across Germany, requiring extensive temporary broadcasting infrastructure for live coverage along the route.",August,,
+Marcia per la Vita,52.52,13.405,Public March/Demonstration,,Berlin,,,2000,"Public march, explicitly mentioned as covered live by TV, requiring mobile broadcast.",September,,
+Marcia per la Vita,50.9375,6.9603,Public March/Demonstration,,Cologne,,,2000,"Public march, explicitly mentioned as covered live by TV, requiring mobile broadcast.",September,,
+Berlin Marathon,52.52,13.405,Road Running Race,,Berlin,,,2000,"Major international marathon, extensive road closures and mobile broadcast required.",September,,
+Hamburg Marathon,53.5511,9.9937,Road Running Race,,Hamburg,,,2000,"Major city marathon, requiring mobile broadcast.",April,,
+Frankfurt Marathon,50.1109,8.6821,Road Running Race,,Frankfurt am Main,,,2000,"Major city marathon, requiring mobile broadcast.",October,,
+Cologne Marathon,50.9375,6.9603,Road Running Race,,Cologne,,,2000,"Major city marathon, requiring mobile broadcast.",October,,
+Düsseldorf Marathon,51.2277,6.7735,Road Running Race,,Düsseldorf,,,2000,"Major city marathon, requiring mobile broadcast.",April,,
+Munich Marathon,48.1351,11.582,Road Running Race,,Munich,,,2000,"Major city marathon, requiring mobile broadcast.",October,,
+Leipzig Marathon,51.3397,12.3731,Road Running Race,,Leipzig,,,2000,"City marathon, requiring mobile broadcast.",April,,
+Dresden Marathon,51.0504,13.7373,Road Running Race,,Dresden,,,2000,"City marathon, requiring mobile broadcast.",October,,
+Bremen Marathon,53.0793,8.8017,Road Running Race,,Bremen,,,2000,"City marathon, requiring mobile broadcast.",October,,
+Stuttgart Marathon,48.7758,9.1829,Road Running Race,,Stuttgart,,,2000,"City marathon, requiring mobile broadcast.",October,,
+Hannover Marathon,52.3759,9.732,Road Running Race,,Hannover,,,2000,"City marathon, requiring mobile broadcast.",April,,
+Fête de la Musique,52.52,13.405,Street Music Festival,,Berlin (citywide),,,3000,"Hundreds of free concerts in public spaces, requiring distributed temporary setups.",21-Jun,,
+Rave the Planet,52.52,13.405,Street Parade/Demonstration,,Berlin,,,3000,"Successor to Love Parade, large street event with floats and sound systems, requiring extensive temporary broadcast.",July,,
+Cannstatter Wasen,48.799,9.213,Folk Festival / Fair,,Stuttgart,,,1000,"Large folk festival on fairgrounds, similar to Oktoberfest, with temporary infrastructure.",September-October,,
+Kieler Woche,54.3233,10.1228,Sailing Regatta & Festival,,Kiel,,,2000,"World's largest sailing event with accompanying city festival, parades, and numerous outdoor events requiring temporary broadcast along the waterfront.",June,,
+Nuremberg Christkindlesmarkt,49.4521,11.0767,Christmas Market,,Nuremberg,,,500,One of the most famous Christmas markets; large-scale events and broadcasts often use temporary setups.,Nov-Dec,,
+Rathausmarkt Weihnachtsmarkt,53.55,9.99,Christmas Market,,Hamburg,,,500,"Popular Christmas market in front of city hall, temporary setups for media coverage.",Nov-Dec,,
+Domplatte Weihnachtsmarkt,50.941,6.958,Christmas Market,,Cologne,,,500,"Major Christmas market next to the cathedral, temporary setups for media coverage.",Nov-Dec,,
