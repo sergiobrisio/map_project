@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -34,9 +35,10 @@ type GeoJSONFeature struct {
 
 // Event rappresenta la struttura di un nostro evento letto da CSV (per i marker iniziali)
 type Event struct {
-	Name      string `json:"name"`
-	Latitude  string `json:"lat"`
-	Longitude string `json:"lon"`
+	Name      string  `json:"name"`
+	Latitude  string  `json:"lat"`
+	Longitude string  `json:"lon"`
+	Radius    float32 `json:"radius"`
 }
 
 // loadEvents carica gli eventi dal file CSV specificato
@@ -65,14 +67,26 @@ func loadEvents(filename string) []Event {
 	}
 
 	var events []Event
-	// Salta l'intestazione se presente (assumiamo prima riga sia intestazione)
 	if len(records) > 1 {
 		for _, record := range records[1:] {
-			if len(record) >= 3 { // Assicurati che ci siano almeno 3 colonne (Nome, Lat, Lon)
+			var radius float64 = 0.0 // valore di default
+
+			if len(record) >= 10 && record[9] != "" {
+				if parsedRadius, err := strconv.ParseFloat(record[9], 32); err == nil {
+					radius = parsedRadius
+				} else {
+					log.Printf("Avviso: Valore 'Radius' non valido (%s) per evento: %v. Uso 0.0 come default.", record[9], record)
+				}
+			} else {
+				log.Printf("Avviso: Campo 'Radius' mancante per evento: %v. Uso 0.0 come default.", record)
+			}
+
+			if len(record) >= 3 {
 				event := Event{
 					Name:      record[0],
 					Latitude:  record[1],
 					Longitude: record[2],
+					Radius:    float32(radius), // conversione float64 → float32
 				}
 				events = append(events, event)
 			} else {
@@ -82,6 +96,7 @@ func loadEvents(filename string) []Event {
 	} else {
 		log.Printf("Avviso: Il file CSV '%s' è vuoto o contiene solo l'intestazione.", filepath)
 	}
+
 	return events
 }
 

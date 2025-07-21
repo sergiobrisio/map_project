@@ -53,12 +53,25 @@ function loadMarkersOnMap(events) {
     events.forEach(event => {
         const lat = parseFloat(event.lat);
         const lon = parseFloat(event.lon);
+        const radius = parseFloat(event.radius)
         
         if (!isNaN(lat) && !isNaN(lon)) {
+            // Crea un cerchio con raggio Radius (in metri)
+            const circle = L.circle([lat, lon], {
+                radius: radius, // raggio in metri
+                color: 'blue',  // Colore del bordo
+                fillColor: 'blue',  // Colore di riempimento
+                fillOpacity: 0.2,  // Opacità del riempimento
+            }).bindPopup(`<b>${event.name}</b><br>Lat: ${lat}<br>Lon: ${lon}<br>Radius: ${radius} meters`);
+            
+            markers.push(circle);
+            currentMarkers.addLayer(circle); // Aggiungi il cerchio al feature group
+            /*
             const marker = L.marker([lat, lon])
                 .bindPopup(`<b>${event.name}</b><br>Lat: ${lat}<br>Lon: ${lon}`);
             markers.push(marker);
             currentMarkers.addLayer(marker); // Aggiungi al feature group
+            */
         }
     });
 
