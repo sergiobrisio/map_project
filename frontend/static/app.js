@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('/static/config.json')
     .then(response => response.json())
     .then(config => {
-        console.log("✅ Configurazione caricata:", config);
+        console.log("✅ Config loaded:", config);
         apiBaseUrl = config.apiBaseUrl;
         initDrawingAndSubmission(); // chiama la funzione principale
     })
     .catch(error => {
-        console.error('Errore nel caricamento della configurazione:', error);
-        alert('Impossibile caricare la configurazione.');
+        console.error('Error in config loading:', error);
+        alert('Impossible to load config.');
     });
 
     function initDrawingAndSubmission() {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Assicurati che la mappa sia stata inizializzata da map.js
         if (!window.map) {
-            console.error("Errore: La mappa non è stata inizializzata. Assicurati che map.js sia caricato prima di app.js.");
+            console.error("Error: The map has not been initialized. Ensure that map.js have been loaded before app.js.");
             return;
         }
 
@@ -69,22 +69,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 drawnItems.clearLayers();
                 drawnItems.addLayer(layer);
                 drawnPolygon = layer.toGeoJSON();
-                console.log("Poligono disegnato e salvato:", drawnPolygon);
+                console.log("The polygon has been drawn and saved:", drawnPolygon);
             }
         });
 
         // Invio nuovo evento
         document.getElementById('submitEvent').addEventListener('click', function () {
+            const eventName = document.getElementById('eventName').value;
             const startDate = document.getElementById('startDate').value;
             const endDate = document.getElementById('endDate').value;
 
             if (!drawnPolygon) {
-                alert("Per favore, disegna un'area sulla mappa prima di inviare.");
+                alert("Please, draw an area on the map before clicking on Send.");
+                return;
+            }
+
+             if (!eventName) {
+                alert("Please, insert an event name.");
                 return;
             }
 
             if (!startDate || !endDate) {
-                alert("Per favore, seleziona una data di inizio e una di fine.");
+                alert("Please, select a star date and an end date.");
                 return;
             }
 
@@ -94,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 properties: {
                     startDate: startDate,
                     endDate: endDate,
-                    name: "Nuovo Evento Creato" // Puoi aggiungere un input per il nome
+                    name: eventName,
                 }
             };
 
@@ -107,16 +113,16 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(response => response.json())
             .then(data => {
-                console.log('Risposta dal server:', data);
+                console.log('Server response:', data);
 
                 if (data.status === 'success') {
-                    alert(`Evento creato con successo!`);
+                    alert(`Event successfully created!`);
 
                     // Visualizza il nuovo poligono con stile
                     const newEventLayer = L.geoJSON(newEventPayload, {
                         style: newEventStyle,
                         onEachFeature: function (feature, layer) {
-                            layer.bindPopup(`<b>${feature.properties.name}</b><br>Dal: ${feature.properties.startDate}<br>Al: ${feature.properties.endDate}`);
+                            layer.bindPopup(`<b>${feature.properties.name}</b><br>From: ${feature.properties.startDate}<br>To: ${feature.properties.endDate}`);
                         }
                     });
 
@@ -127,12 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     drawnPolygon = null;
 
                 } else {
-                    alert('Si è verificato un errore nella creazione dell\'evento: ' + (data.message || 'Errore sconosciuto.'));
+                    alert('An error occurred while creating the event: ' + (data.message || 'Unknown error.'));
                 }
             })
             .catch(error => {
-                console.error('Errore durante l\'invio del nuovo evento:', error);
-                alert('Si è verificato un errore di comunicazione con il server.');
+                console.error('Error sending new event:', error);
+                alert('An error occurred communicating with the server.');
             });
         });
     }

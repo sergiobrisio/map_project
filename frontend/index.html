@@ -28,13 +28,17 @@
     <div class="control-panel">
         <h2>Create a new event</h2>
         <p>1. Please use the map controls to draw a polygon.</p>
-        <p>2. Select dates a push the 'Send New Event' button.</p>
+        <p>2. Insert a name of the event.</p>
+        <label for="eventName">Event Name:</label>
+        <input type="string" id="eventName">
+        <p>3. Select dates a push the 'Send New Event' button.</p>
         <label for="startDate">Start Date:</label>
         <input type="date" id="startDate">
         <br>
         <label for="endDate">End Date:</label>
         <input type="date" id="endDate">
-        <br><br>
+        <br>
+        <br>
         <button id="submitEvent">Send New Event</button>
     </div>
 
