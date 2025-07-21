@@ -171,10 +171,18 @@ func main() {
 		})
 	})
 
-	log.Println("🚀 Server in ascolto su http://localhost:8082")
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8082"
 	}
+	// Ottieni l'URL dell'API in base all'ambiente
+	apiBaseUrl := os.Getenv("API_BASE_URL")
+	if apiBaseUrl == "" {
+		apiBaseUrl = "http://localhost:8082" // Impostazione di default per sviluppo
+	}
+	// Log per vedere quale URL viene utilizzato
+	log.Println("🚀 Server in ascolto su http://localhost:" + port)
+	log.Println("🌐 API Base URL in uso:", apiBaseUrl)
+
 	router.Run(":" + port)
 }
