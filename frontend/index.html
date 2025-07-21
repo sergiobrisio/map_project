@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progetto Mappa MVP</title>
+    <title>MVP Map Project</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Mappa Eventi</h1>
+    <h1>EVENT MAP</h1>
         <h2>Please Select the Map:
         <select name="map_list" id="mapSelect" onchange="changeMap()">
-            <option value="">Seleziona una mappa</option>
+            <option value="">Please select one of the available maps</option>
             <option value="uk_festivals.csv" {{if eq .selectedFilename "uk_festivals.csv"}}selected{{end}}>UK Festivals</option>
             <option value="uk_events_broadcast.csv" {{if eq .selectedFilename "uk_events_broadcast.csv"}}selected{{end}}>UK Events Broadcast</option>
             <option value="uk_private_companies.csv" {{if eq .selectedFilename "uk_private_companies.csv"}}selected{{end}}>UK Private Companies</option>
@@ -26,16 +26,16 @@
     <div id="map"></div>
 
     <div class="control-panel">
-        <h2>Crea Nuovo Evento</h2>
-        <p>1. Usa i controlli sulla mappa per disegnare un poligono.</p>
-        <p>2. Seleziona le date e clicca 'Invia'.</p>
-        <label for="startDate">Data Inizio:</label>
+        <h2>Create a new event</h2>
+        <p>1. Please use the map controls to draw a polygon.</p>
+        <p>2. Select dates a push the 'Send New Event' button.</p>
+        <label for="startDate">Start Date:</label>
         <input type="date" id="startDate">
         <br>
-        <label for="endDate">Data Fine:</label>
+        <label for="endDate">End Date:</label>
         <input type="date" id="endDate">
         <br><br>
-        <button id="submitEvent">Invia Nuovo Evento</button>
+        <button id="submitEvent">Send New Event</button>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
